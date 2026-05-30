@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: munchkin-mailbox
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PUBLIC_DEMO
+        value: "1"
+      - key: MUNKIN_MESSAGE_TTL_HOURS
+        value: "24"
+      - key: MUNKIN_ADMIN_PIN
+        sync: false
+      - key: MUNKIN_DEVICE_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false

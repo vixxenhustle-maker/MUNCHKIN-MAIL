@@ -1,0 +1,15 @@
+{
+  "name": "munchkin-mailbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Munchkin mailbox and owner inbox for the Pocket Bestie game.",
+  "scripts": {
+    "start": "node mailbox-server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "pg": "^8.16.0"
+  }
+}
